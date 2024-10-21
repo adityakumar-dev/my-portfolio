@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive</title>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+
+      body {
+        min-height: 100vh;
+        max-height: auto;
+        background: url("image/background.jpg") no-repeat fixed;
+        background-position: center;
+        background-size: cover;
+      }
+     .projects{
+ min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  flex-wrap: wrap;     }
+  .project{
+     width: 450px;
+  color: white;
+  height: 600px;
+  background: rgba(7, 11, 46, 0.3);
+  border-radius: 1rem;
+  box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.3),
+    0px 0px 40px rgba(0, 0, 255, 0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+  }
+    </style>
+    <link rel="stylesheet" href="css/navbar.css" />
+
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/skills.css">
+    <link rel="stylesheet" href="css/media_query.css" />
+  </head>
+
+  <body>
+    <a href="#" class="logo hide">Linmar</a>
+    <div class="hamburger" onclick="toggleMenu()">
+      <div class="close"></div>
+      <div class="close"></div>
+      <div class="close"></div>
+    </div>
+    <header>
+      <a href="#" class="logo">Linmar</a>
+
+      <nav class="navbar">
+        <a href="#">Home</a>
+        <a href="#">Skills</a>
+        <a href="#">Projects</a>
+        <a href="#">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Home -->
+      <div class="home">
+        <div class="height-res">
+          <div class="bio">
+            <h3>Hello, I'm</h3>
+            <h1>Aditya Kumar</h1>
+            <h4>
+              a second-year B.Tech student in Computer Science and Engineering.
+              I specialize in Linux (Arch Linux), Flutter, Python, and web
+              development. My portfolio showcases my passion for creating
+              innovative solutions and my technical skills
+            </h4>
+          </div>
+        </div>
+        <div class="height-res">
+          <div class="bio-image"></div>
+          <h3 class="bio-image-text">adityakumar_dev</h3>
+        </div>
+      </div>
+
+      <div class="skills">
+        <div class="row-wrapper">
+          <div class="skill"> 
+            <img class="skill-logo flutter" src="image/flutter.webp" alt="">
+            <div class="skill-content">
+             <h3> Cross-platform app development </h3>
+              <p>
+            Experience in building responsive and visually appealing apps using Flutter. 
+            Expertise in UI/UX, state management with Provider, and Firebase/Supabase integration for 
+            authentication and cloud services.
+        </p>
+            </div>
+          </div>
+        </div>
+        <div class="row-wrapper">
+            <div class="skill">
+                  <img class=" linux" src="image/linux.png" alt="">
+                   <div class="skill-content">
+             <h3>  Open-Source Operating System </h3>
+              <p>
+          Proficient in Linux (Arch Linux), including system administration, shell scripting, package management, 
+            and network configurations. Experienced in using Linux for development environments and automation tasks.
+     
+        </p>
+            </div>
+           </div>
+          </div>
+       
+          <div class="row-wrapper">
+            <div class="skill">
+                  <img class=" nodejs" src="image/nodejs.png" alt="">
+                   <div class="skill-content">
+             <h3>Server-Side Programming</h3>
+              <p>
+          Experience in building Express-based server applications, handling file uploads with Multer, 
+            creating RESTful APIs, and integrating databases. Skilled in managing server-side file handling 
+            and developing scalable backend solutions.
+        </p>
+            </div>
+           </div>
+          </div>
+       
+           <div class="row-wrapper">
+            <div class="skill">
+                  <img class=" firebase" src="image/firebase.png" alt="">
+                   <div class="skill-content">
+             <h3> Cloud-Based Backend </h3>
+              <p>
+           Experience in Firebase Authentication, Firestore database integration, Realtime Database, 
+            Firebase Hosting, Cloud Functions, and Push Notifications. Skilled in building serverless applications 
+            and real-time data synchronization across platforms.
+        </p>
+            </div>
+           </div>
+          </div>
+        
+        </div>
+      </div>
+
+
+   
+    </main>
+
+    <script src="index.js"></script>
+  </body>
+</html>

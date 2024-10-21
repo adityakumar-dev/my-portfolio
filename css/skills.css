@@ -1,0 +1,62 @@
+.skills {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.skill:hover {
+  transform: scale(1.05);
+}
+.skill {
+  width: 350px;
+  color: white;
+  height: 600px;
+  background: rgba(7, 11, 46, 0.3);
+  border-radius: 1rem;
+  box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.3),
+    0px 0px 40px rgba(0, 0, 255, 0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.row-wrapper {
+  min-height: 100vh;
+  display: flex;
+  margin: 0 50px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.flutter {
+  width: 220px;
+  margin: 20px 0px;
+}
+.skill-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 10px;
+  height: 100%;
+  border-radius: 1rem;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.skill-content h3 {
+  margin: 30px 0px;
+}
+.nodejs {
+  width: 400px;
+  margin: 20px 0px;
+}
+.firebase {
+  width: 150px;
+  margin: 30px 0px;
+}
+.linux {
+  width: 260px;
+}
