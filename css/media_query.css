@@ -79,6 +79,12 @@
   .hamburger {
     display: block;
   }
+  .skill {
+    width: auto;
+  }
+  .project {
+    width: auto;
+  }
 }
 
 @media (max-width: 468px) {
@@ -106,5 +112,8 @@
   .row-wrapper {
     margin: 0px 10px;
     padding: 20px 20px;
+  }
+  .project {
+    width: auto;
   }
 }
