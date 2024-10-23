@@ -1,7 +1,7 @@
     const navbar = document.querySelector('header');
     const closeDiv = document.querySelector('.hamburger');
-const smallSizeLogo = document.querySelector('.hide');
-const bio = document.querySelector('.bio');
+    const smallSizeLogo = document.querySelector('.hide');
+    const bio = document.querySelector('.bio');
 function toggleMenu() {
     if (navbar.style.display === 'flex') {
           for (var i = 0; i < closeDiv.children.length; i++){
@@ -57,3 +57,4 @@ function toggleMenu() {
         }
       
   });
+

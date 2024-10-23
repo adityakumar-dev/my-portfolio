@@ -15,7 +15,9 @@
         box-sizing: border-box;
         font-family: "Poppins", sans-serif;
       }
-
+      html {
+        scroll-behavior: smooth;
+      }
       body {
         min-height: 100vh;
         max-height: auto;
@@ -23,69 +25,12 @@
         background-position: center;
         background-size: cover;
       }
-
-      .contacts {
-        min-height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-      }
-
-      .contact-div {
-        display: flex;
-        flex-direction: column;
-        color: white;
-        margin: 50px 50px;
-        align-items: center;
-        justify-content: center;
-        padding: 20px 20px;
-        width: 350px;
-        border: 2px solid rgba(255, 255, 255, 0.3);
-        border-radius: 1rem;
-        background: rgba(7, 11, 46, 0.6);
-        box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.1),
-          0px 0px 40px rgba(0, 0, 255, 0.3);
-        transition: all 0.3s ease;
-      }
-
-      /* Keep the individual hover effect for contact-div */
-      .contact-div:hover {
-        border: 2px solid rgba(255, 255, 255, 1);
-        background: rgba(7, 11, 46, 0.6);
-        box-shadow: 0px 0px 20px rgba(255, 255, 255, 1),
-          0px 0px 40px rgba(0, 0, 255, 0.8);
-      }
-      .contact-me {
-        margin: 40px 0px;
-        padding: 20px 20px;
-        border: 2px solid rgba(255, 255, 255, 0.1);
-        border-radius: 1rem;
-        font-size: 24px;
-        font-weight: bold;
-        transition: all 0.3s ease;
-      }
-      .contact-me:hover {
-        border: 2px solid white;
-        box-shadow: 0px 0px 20px rgba(255, 255, 255, 1),
-          0px 0px 40px rgba(0, 0, 255, 0.8);
-      }
-      .twitter {
-        width: 200px;
-      }
-      .linkedin {
-        width: 160px;
-        margin: 20px 0px;
-      }
-      .gmail {
-        width: 160px;
-        margin: 20px 0px;
-      }
     </style>
     <link rel="stylesheet" href="css/navbar.css" />
     <link rel="stylesheet" href="css/home.css" />
     <link rel="stylesheet" href="css/skills.css" />
     <link rel="stylesheet" href="css/project.css" />
+    <link rel="stylesheet" href="css/contacts.css" />
     <link rel="stylesheet" href="css/media_query.css" />
   </head>
 
@@ -100,16 +45,16 @@
       <a href="#" class="logo">Linmar</a>
 
       <nav class="navbar">
-        <a href="#">Home</a>
-        <a href="#">Skills</a>
-        <a href="#">Projects</a>
-        <a href="#">Contact</a>
+        <a href="#home">Home</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contacts">Contact</a>
       </nav>
     </header>
 
     <main>
       <!-- Home -->
-      <div class="home">
+      <div id="home" class="home">
         <div class="height-res">
           <div class="bio">
             <h3>Hello, I'm</h3>
@@ -128,7 +73,7 @@
         </div>
       </div>
 
-      <div class="skills">
+      <div id="skills" class="skills">
         <div class="row-wrapper">
           <div class="skill">
             <img class="flutter" src="image/flutter.webp" alt="" />
@@ -206,7 +151,7 @@
         </div>
       </div>
 
-      <div class="projects">
+      <div id="projects" class="projects">
         <div class="row-wrapper">
           <div class="project">
             <h2>YT DESK</h2>
@@ -242,7 +187,7 @@
         </div>
       </div>
 
-      <div class="contacts">
+      <div id="contacts" class="contacts">
         <div class="contact-div">
           <img class="twitter" src="image/twitter.png" alt="" />
           <div class="contact-me">Follow on X</div>
@@ -254,6 +199,11 @@
         <div class="contact-div">
           <img class="gmail" src="image/gmail.png" alt="" />
           <div class="contact-me">Email me</div>
+        </div>
+
+        <div class="contact-div">
+          <img class="gmail" src="image/github.png" alt="" />
+          <div class="contact-me">Github</div>
         </div>
       </div>
     </main>

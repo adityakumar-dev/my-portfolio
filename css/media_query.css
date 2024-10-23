@@ -72,9 +72,12 @@
     margin-bottom: 10px;
   }
   header {
+    width: 100%;
     transition: all 0.3s ease;
 
     display: none;
+    margin: 0;
+    background: rgba(7, 11, 46, 1);
   }
   .hamburger {
     display: block;
@@ -88,6 +91,11 @@
 }
 
 @media (max-width: 468px) {
+  header {
+    width: 100%;
+
+    background: rgba(7, 11, 46, 1);
+  }
   .bio {
     margin: 0px 10px;
     padding: 40px 10px;

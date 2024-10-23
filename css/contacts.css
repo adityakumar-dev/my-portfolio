@@ -1,0 +1,58 @@
+.contacts {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.contact-div {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  margin: 50px 50px;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 20px;
+  width: 350px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 1rem;
+  background: rgba(7, 11, 46, 0.6);
+  box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.1),
+    0px 0px 40px rgba(0, 0, 255, 0.3);
+  transition: all 0.3s ease;
+}
+
+/* Keep the individual hover effect for contact-div */
+.contact-div:hover {
+  border: 2px solid rgba(255, 255, 255, 1);
+  background: rgba(7, 11, 46, 0.6);
+  box-shadow: 0px 0px 20px rgba(255, 255, 255, 1),
+    0px 0px 40px rgba(0, 0, 255, 0.8);
+}
+.contact-me {
+  margin: 40px 0px;
+  padding: 20px 20px;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.contact-me:hover {
+  border: 2px solid white;
+  box-shadow: 0px 0px 20px rgba(255, 255, 255, 1),
+    0px 0px 40px rgba(0, 0, 255, 0.8);
+}
+.twitter {
+  width: 200px;
+}
+.linkedin {
+  width: 160px;
+  margin: 20px 0px;
+}
+.gmail {
+  width: 160px;
+  margin: 20px 0px;
+}
