@@ -9,6 +9,8 @@
 .project {
   width: 450px;
   color: white;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+
   height: 600px;
   margin: 20px 0px;
   padding: 0px 30px;
@@ -57,6 +59,7 @@
   z-index: -1;
 }
 .project:hover {
-  box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.6),
-    0px 0px 40px rgba(0, 0, 255, 0.6);
+  border: 2px solid rgba(255, 255, 255, 1);
+  box-shadow: 0px 0px 20px rgba(255, 255, 255, 1),
+    0px 0px 40px rgba(0, 0, 255, 0.3);
 }
