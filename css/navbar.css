@@ -60,6 +60,9 @@ a::before {
 a:hover::before {
   width: 100%;
 }
+a.active::before {
+  width: 100%;
+}
 .hamburger {
   display: none;
   position: fixed;
