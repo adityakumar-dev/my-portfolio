@@ -5,6 +5,22 @@ const bio = document.querySelector('.bio');
 
 const navbarLinks = document.querySelectorAll('.navbar a')
 
+let lastScrollTop = 0;
+
+window.addEventListener('scroll', function() {
+    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    if (scrollTop > lastScrollTop) {
+        console.log('Scrolling down');
+        navbar.style = 'margin : -100px 150px;'
+    } else {
+        console.log('Scrolling up');
+    
+        navbar.style = 'margin : 30px 150px;'
+    }
+    lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; 
+});
+
+
 navbarLinks.forEach(function (item) {
     item.addEventListener('click', function (event) {
        
