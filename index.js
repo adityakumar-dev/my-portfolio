@@ -4,20 +4,34 @@
 const bio = document.querySelector('.bio');
 
 const navbarLinks = document.querySelectorAll('.navbar a')
-
 let lastScrollTop = 0;
 
 window.addEventListener('scroll', function() {
     let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
     if (scrollTop > lastScrollTop) {
         console.log('Scrolling down');
-        navbar.style = 'margin : -100px 150px;'
+       if (window.matchMedia("(max-width: 468px)").matches) {
+            navbar.style.margin = '0px 0px';
+        } else if (window.matchMedia("(max-width: 768px)").matches) {
+            navbar.style.margin = '-50px 10px';
+        } else if (window.matchMedia("(max-width: 1200px)").matches) {
+            navbar.style.margin = '-120px 25px';
+        } else {
+            navbar.style.margin = '-130px 150px';
+        }
     } else {
         console.log('Scrolling up');
-    
-        navbar.style = 'margin : 30px 150px;'
+        if (window.matchMedia("(max-width: 468px)").matches) {
+            navbar.style.margin = '0px 0px';
+        } else if (window.matchMedia("(max-width: 768px)").matches) {
+            navbar.style.margin = '10px';
+        } else if (window.matchMedia("(max-width: 1200px)").matches) {
+            navbar.style.margin = '20px 25px';
+        } else {
+            navbar.style.margin = '30px 150px';
+        }
     }
-    lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; 
+    lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
 });
 
 
